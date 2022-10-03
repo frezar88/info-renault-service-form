@@ -1,0 +1,104 @@
+.block.error{
+  border: solid 1px red;
+  font-family: "Fonts", helvetica, arial, sans-serif;
+}
+.block {
+  width: 100%;
+  border: solid 1px #c4c4c4;
+  border-radius: 5px;
+  box-sizing: border-box;
+  max-height: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  font-family: "Fonts", helvetica, arial, sans-serif;
+  label{
+    margin-bottom: 0;
+    font-family: "Fonts", helvetica, arial, sans-serif;
+  }
+
+  .list {
+    font-family: "Fonts", helvetica, arial, sans-serif;
+    padding: 5px;
+    width: 100%;
+    display: grid;
+    gap: 0px;
+    box-sizing: border-box;
+
+    .item.active {
+      border: solid 2px var(--prime_olor);
+      font-family: "Fonts", helvetica, arial, sans-serif;
+    }
+
+    .item {
+      box-sizing: border-box;
+      padding: 10px 5px;
+      border: solid 2px #fff;
+
+      cursor: pointer;
+      font-family: "Fonts", helvetica, arial, sans-serif;
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+
+      p {
+        margin: 0;
+        font-family: "Fonts", helvetica, arial, sans-serif;
+      }
+
+      img {
+        width: 25px;
+        height: 25px;
+      }
+
+      .row1 {
+        font-family: "Fonts", helvetica, arial, sans-serif;
+
+        font-weight: bold;
+        font-size: 16px;
+        color: #777;
+      }
+
+      .row2 {
+
+        font-family: "Fonts", helvetica, arial, sans-serif;
+        font-weight: normal;
+        font-size: 14px;
+        color: #777;
+      }
+
+      .row3 {
+        font-family: "Fonts", helvetica, arial, sans-serif;
+        font-weight: normal;
+        font-size: 14px;
+        color: #777;
+      }
+
+      .row4 {
+        font-family: "Fonts", helvetica, arial, sans-serif;
+        font-weight: normal;
+        font-size: 14px;
+        color: #777;
+      }
+
+      .info_wrapper {
+        font-family: "Fonts", helvetica, arial, sans-serif;
+        display: grid;
+        gap: 5px;
+      }
+    }
+  }
+
+  .lab{
+
+
+  }
+  input[type="radio"] {
+    font-family: "Fonts", helvetica, arial, sans-serif;
+    //display: none;
+    opacity: 1;
+    height: 0;
+    margin: 0;
+  }
+}

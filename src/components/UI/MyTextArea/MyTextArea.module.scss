@@ -1,0 +1,17 @@
+.label{
+  textarea{
+    font-family: "Fonts", helvetica, arial, sans-serif;
+  }
+  display: grid;
+  gap: 10px;
+  font-family: "Fonts", helvetica, arial, sans-serif;
+  &__text{
+
+    font-size: 17px;
+    font-family: "Fonts", helvetica, arial, sans-serif;
+  }
+}
+.text_area{
+  width: 100%;
+  font-family: "Fonts", helvetica, arial, sans-serif !important;
+}

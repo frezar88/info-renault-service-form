@@ -1,0 +1,25 @@
+.block{
+  margin-top: 50px;
+  font-family: "Fonts", helvetica, arial, sans-serif;
+  h5{
+    font-family: "Fonts", helvetica, arial, sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 15px;
+  }
+  p{
+    margin: 0;
+    font-size: 14px;
+    font-family: "Fonts", helvetica, arial, sans-serif;
+    &:last-child{
+      margin-top: 20px;
+
+    }
+  }
+  h6{
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: "Fonts", helvetica, arial, sans-serif;
+    font-weight: bold;
+  }
+}

@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import s from './App.module.scss'
+import MyTitleBlock from "./components/MyTitleBlock/MyTitleBlock";
+import PrivacyPolicy from "./components/PrivacyPolicy/PrivacyPolicy";
+import MyForm from "./components/MyForm/MyForm";
+import PopUp from "./components/PopUp/PopUp";
+import MySpinner from "./components/UI/MySpinner/MySpinner";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+
+const App = () => {
+    const [cityDealer, setCityDealer] = useState()
+    const [popUpState, setPopUpState] = useState(false)
+    const [spinnerState, setSpinnerState] = useState(false)
+
+    return (
+        <div className={s.App}>
+            {
+                spinnerState
+                    ? <MySpinner/>
+                    : ''
+            }
+
+            {
+                popUpState
+                    ? <PopUp/>
+                    : ''
+            }
+
+            <MyTitleBlock/>
+            <div className={s.page}>
+                <MyForm
+                    setSpinnerState={setSpinnerState}
+                    setPopUpState={setPopUpState}
+                    cityDealer={cityDealer}
+                    setCityDealer={setCityDealer}
+                />
+                <PrivacyPolicy/>
+            </div>
+        </div>
+
+    );
+};
 
 export default App;

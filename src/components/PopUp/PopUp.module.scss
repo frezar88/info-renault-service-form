@@ -1,0 +1,25 @@
+.popUp{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.53);
+  z-index: 11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Fonts", helvetica, arial, sans-serif;
+
+  &__container{
+    background: #fff;
+    padding: 50px;
+    font-family: "Fonts", helvetica, arial, sans-serif;
+    h2{
+      font-size: 18px;
+
+      font-family: "Fonts", helvetica, arial, sans-serif;
+
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import "style/nullstyle";
+@import "style/fonts";
+
+.App {
+  --prime_olor:#efdf00;
+  font-family: "Fonts", helvetica, arial, sans-serif;
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  .page{
+    max-width: 550px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}

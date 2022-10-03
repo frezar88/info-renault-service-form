@@ -1,0 +1,35 @@
+.title {
+  h4 {
+
+    text-align: center;
+    font-size: 1.71429rem;
+    line-height: 2rem;
+    color: #656666;
+    margin-bottom: 16px;
+    font-family: "Fonts", helvetica, arial, sans-serif;
+  }
+
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3.21429rem;
+    line-height: 3.57143rem;
+    font-weight: bold;
+
+    font-family: "Fonts", helvetica, arial, sans-serif;
+  }
+}
+
+@media(max-width: 560px) {
+  .title {
+    h4 {
+      font-size: 1.31429rem;
+      font-family: "Fonts", helvetica, arial, sans-serif;
+    }
+
+    h1 {
+      font-size: 1.501429rem;
+      font-family: "Fonts", helvetica, arial, sans-serif;
+    }
+  }
+}

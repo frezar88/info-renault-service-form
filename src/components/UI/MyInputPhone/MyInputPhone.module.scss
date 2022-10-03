@@ -1,0 +1,29 @@
+.label {
+  display: grid;
+  gap: 10px;
+  font-family: "Fonts", helvetica, arial, sans-serif;
+  input {
+    width: 100% !important;
+    font-family: "Fonts", helvetica, arial, sans-serif;
+  }
+  span{
+    font-family: "Fonts", helvetica, arial, sans-serif;
+  }
+}
+
+.form_control {
+  width: 100% !important;
+  font-size: 18px !important;
+  height: 49px !important;
+  border-radius: 5px !important;
+  font-family: "Fonts", helvetica, arial, sans-serif;
+}
+
+@media (max-width: 980px) {
+  .form_control {
+    width: 100% !important;
+    font-size: 20px !important;
+    height: 55px !important;
+    border-radius: 0 !important;
+  }
+}
